@@ -48,9 +48,17 @@
       </div>
     </nav>
 
-    <!-- Animated Hello! -->
+    <!-- bootstrap layout -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"><h1 id="personality"></h1></div>
+      </div>
+      <div class="row"></div>
+      <div class="row"></div>
+      <div class="row"></div>
+    </div>
 
-    <h1 id="hero"></h1>
+    <!-- Animated Hello! -->
 
     <!-- https://fonts.google.com/?selection.family=Major+Mono+Display|Roboto+Slab -->
     <!-- Major Mano Display for animinated HELLO!
@@ -60,6 +68,8 @@
     <!-- Simple Style not super flashy -->
     <!-- Convey personal abilities -->
     <!-- Subtly Awesome ;) -->
+
+    <!-- """MAJOR JS LOAD BLOCK""" -->
     <!-- https://typeitjs.com/docs/ -->
     <script src="https://cdn.jsdelivr.net/npm/typeit@VERSION_NUMBER/dist/typeit.min.js"></script>
     <!-- JScript to make Bootstrap work -->
@@ -78,5 +88,13 @@
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"
     ></script>
+
+    <!-- JS for Typing Animation -->
+    <script>
+      new TypeIt(".personality", {
+        speed: 50,
+        startDelay: 1000
+      }).type("Welcome");
+    </script>
   </body>
 </html>
