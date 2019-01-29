@@ -77,7 +77,7 @@
     <!-- bootstrap layout -->
     <div class="container">
       <div class="row">
-        <div class="col-md-12"><h1 id="element"></h1></div>
+        <div class="col-md-12"><h1 id="hello"></h1></div>
       </div>
       <div class="row"></div>
       <div class="row"></div>
@@ -119,8 +119,9 @@
     <script>
       //-- See full documentation for TypeIt at https://typeitjs.com.
 
-      new TypeIt("#element", {
-        speed: 45
+      new TypeIt("#hello", {
+        speed: 45,
+        startDelay: 1250
       })
         .type("The programers")
         .pause(300)
