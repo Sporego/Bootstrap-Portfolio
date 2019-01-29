@@ -88,13 +88,20 @@
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+    <script src="dist/typeit.min.js"></script>
 
     <!-- JS for Typing Animation -->
     <script>
       new TypeIt(".personality", {
         speed: 50,
         startDelay: 1000
-      }).type("Welcome");
+      })
+        .type("Welcome")
+        .pause(333)
+        .break()
+        .type("Hello");
     </script>
   </body>
 </html>
